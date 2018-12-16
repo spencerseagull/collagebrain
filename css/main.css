@@ -29,6 +29,54 @@
     }
 }
 
+@media screen and (max-width: 320px) {
+    .placeholder {
+        width: 288px;
+        height: 360px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url('https://via.placeholder.com/288x360/FFFFFF/FFFFFF');
+    }
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    color: #FFFFFF;
+    font-weight: bold;
+    background-color: #1E1E1E;
+}
+
+.footer a {
+    color: #777777;
+}
+
+.footer p {
+    margin: 0;
+    padding: 0;
+}
+
+.notch-container {
+    position: absolute;
+    bottom: 80px;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.notch {
+  width: 0; 
+  height: 0; 
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 20px solid #1E1E1E;
+}
+
 /* ==========================================================================
    Custom Animations (from https://stackoverflow.com/a/11681331)
    ========================================================================== */

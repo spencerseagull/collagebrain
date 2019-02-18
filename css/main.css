@@ -79,6 +79,27 @@
    Custom Animations (from https://stackoverflow.com/a/11681331)
    ========================================================================== */
 
+.image-shimmer {
+    opacity: 0.50;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: linear-gradient(to right, #FFFFFF 8%, #BABABA 25%, #FFFFFF 40%);
+    height: inherit;
+    margin-top: 7em;
+}
+
+@keyframes placeHolderShimmer {
+    0%{
+        background-position: -600px 0
+    }
+    100%{
+        background-position: 600px 0
+    }
+}
+
 .fadein {
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox < 16 */
@@ -86,6 +107,7 @@
          -o-animation: fadein 2s; /* Opera < 12.1 */
             animation: fadein 2s;
 }
+
 
 @keyframes fadein {
     from { opacity: 0; }
